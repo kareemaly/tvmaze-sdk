@@ -1,0 +1,18 @@
+{
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+  "packages": {
+    "packages/sdk": {
+      "package-name": "@tvmazekit/sdk",
+      "release-type": "node",
+      "changelog-path": "CHANGELOG.md"
+    },
+    "packages/mcp": {
+      "package-name": "@tvmazekit/mcp",
+      "release-type": "node",
+      "changelog-path": "CHANGELOG.md"
+    }
+  },
+  "separate-pull-requests": false,
+  "include-component-in-tag": true,
+  "include-v-in-tag": true
+}

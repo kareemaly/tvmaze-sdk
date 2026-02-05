@@ -1,0 +1,48 @@
+{
+  "name": "@tvmazekit/mcp",
+  "version": "0.0.0",
+  "description": "MCP server for TVMaze API integration",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "tvmazekit-mcp": "./dist/index.js"
+  },
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "bunup",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "bunup": "^0.14.0"
+  },
+  "keywords": ["tvmaze", "mcp", "model-context-protocol", "ai", "llm"],
+  "author": "Kareem Elbahrawy",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kareemelbahrawy/tvmazekit.git",
+    "directory": "packages/mcp"
+  },
+  "bugs": {
+    "url": "https://github.com/kareemelbahrawy/tvmazekit/issues"
+  },
+  "homepage": "https://github.com/kareemelbahrawy/tvmazekit/tree/main/packages/mcp#readme"
+}

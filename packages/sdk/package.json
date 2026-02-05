@@ -1,0 +1,41 @@
+{
+  "name": "@tvmazekit/sdk",
+  "version": "0.0.0",
+  "description": "TypeScript SDK for the TVMaze API",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "bunup",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "bunup": "^0.14.0"
+  },
+  "keywords": ["tvmaze", "api", "sdk", "tv", "shows"],
+  "author": "Kareem Elbahrawy",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kareemelbahrawy/tvmazekit.git",
+    "directory": "packages/sdk"
+  },
+  "bugs": {
+    "url": "https://github.com/kareemelbahrawy/tvmazekit/issues"
+  },
+  "homepage": "https://github.com/kareemelbahrawy/tvmazekit/tree/main/packages/sdk#readme"
+}
