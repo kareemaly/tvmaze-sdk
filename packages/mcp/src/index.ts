@@ -3,7 +3,7 @@ import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
 import { z } from 'zod';
 
-const server = new McpServer({
+const server: McpServer = new McpServer({
   name: 'tvmazekit-mcp',
   version: '0.0.0',
 });
