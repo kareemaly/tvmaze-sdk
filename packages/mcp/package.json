@@ -1,6 +1,6 @@
 {
   "name": "@tvmazekit/mcp",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "MCP server for TVMaze API integration",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -21,7 +21,9 @@
       }
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "bunup",
     "typecheck": "tsc --noEmit"
@@ -33,7 +35,13 @@
   "devDependencies": {
     "bunup": "^0.14.0"
   },
-  "keywords": ["tvmaze", "mcp", "model-context-protocol", "ai", "llm"],
+  "keywords": [
+    "tvmaze",
+    "mcp",
+    "model-context-protocol",
+    "ai",
+    "llm"
+  ],
   "author": "Kareem Elbahrawy",
   "license": "MIT",
   "repository": {
